@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yandex-test</title>
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+    <div class="site-container">
+        <div class="preloader">
+            <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path fill="currentColor"
+                    d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+                </path>
+            </svg>
+        </div>
+        <a class="up-btn-link" onclick="(document.documentElement.scrollTop ? document.documentElement : document.body).scrollTop = 0;"  href="#">
+            <div class="up-btn-block" >
+                <img class="up-btn-arrow" src="./img/icons8-double-up-48.png" alt="">
+                <div class="up-btn">НАВЕРХ</div>
+            </div>
+        </a>
+        <section class="title">
+            <div class="title-container container">
+                <div class="title-logo">
+                    <img src="./img/logo.png" alt="logo">
+                </div>
+                <div>
+                    <div>ПРЕВРАТИТЕ УЕЗДНЫЙ ГОРОД В СТОЛИЦУ ЗЕМНОГО ШАРА</div>
+                    <div>Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</div>
+                    <div>
+                        <div><a href="#support">Поддержать шахматную мысль</a></div>
+                        
+                        <div><a href="#details">Подробнее о турнире</a></div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <div class="marquee-container">
+            <marquee class="marquee" scrollamount="20s" behavior="alternat" direction="left">
+                ШАХМАТЫ ДВИГАЮТ ВПЕРЕД НЕ ТОЛЬКО КУЛЬТУРА, НО И НАУКУ! &bull; ЛЕД ТРОНУЛСЯ, ГОСПОДА ПРИСЯЖНЫЕ ЗАСЕДАТЕЛИ! &bull; ДЕЛО ПОМОЩИ УТОПАЮЩИМ — ДЕЛО РУК САМИХ УТОПАЮЩИХ!
+            </marquee>
+        </div>
+        <section class="support container">
+            <a name="support"></a>
+            <div>Чтобы поддержать Международный васюкинский турнир посетите лекцию на тему: «Плодотворная дебютная идея»</div>
+        </section>
+        <section class="details container">
+            <a name="details"></a>
+            <div>и Сеанс одновременной игры в шахматы на 160 досках гроссмейстера О. Бендера</div>
+        </section>
+
+    </div>
+    <script>
+        window.onload = function () {
+        const $body = document.body;
+        const $preloader = $body.querySelector('.preloader');
+        function afterTransition() {
+            $body.classList.add('loaded');
+            $body.classList.remove('loaded_hiding');
+            $preloader.removeEventListener('transitionend', afterTransition);
+        }
+        $body.classList.add('loaded_hiding');
+        $preloader.addEventListener('transitionend', afterTransition);
+        }
+    </script>
+</body>
+</html>
