@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="./style/style.css">
     <script src="./js/index.js" defer></script>
+    <script src="./js/index1.js" defer></script>
 </head>
 <body>
 
@@ -53,7 +54,7 @@
         <section class="support container">
             <div class="support-text">ЧТОБЫ ПОДДЕРЖАТЬ<br>МЕЖДУНАРОДНЫЙ ВАСЮКИНСКИЙ ТУРНИР ПОСЕТИТЕ ЛЕКЦИЮ НА ТЕМУ: <span style="color: #F54932">«ПЛОДОТВОРНАЯ ДЕБЮТНАЯ ИДЕЯ»</span></div>
             
-            <img src="./img/players.png" alt="players">
+            <img class="support-text__img" src="./img/players.png" alt="players">
         </section>
 
         <a name="details"></a>
@@ -61,7 +62,7 @@
             <img class="details-img" src="./img/player.png" alt="player">
             <div class="details-block">
                 <div class="details-text">И СЕАНС <span style="color: #F54932">ОДНОВРЕМЕННОЙ ИГРЫ<br>В ШАХМАТЫ НА 160 ДОСТАХ</span> ГРОССМЕЙСТЕРА О. БЕНДЕРА</div>
-                <div class="details-lists">
+                <div class="details-lists details-lists__desk">
                     <ul class="details-list__questions">
                         <li class="details-list__questions-item">Место проведения:</li>
                         <li class="details-list__questions-item">Дата и время мероприятия:</li>
@@ -78,61 +79,107 @@
                             <span style='color:#313131'>100 руб.</span></span>&nbsp;&nbsp;21 руб. 16 коп.</li>
                     </ul>
                 </div>
+                <div class="details-lists__mob">
+                    <ul class="details-list__questions">
+                        <li class="details-list__questions-item">Место проведения:</li>
+                        <li class="details-list__answer-item">Клуб «Картонажник»</li>
+                        <li class="details-list__questions-item">Дата и время мероприятия:</li>
+                        <li class="details-list__answer-item">22 июня 1927 г. в 18:00</li>
+                        <li class="details-list__questions-item">Стоимость входных билетов:</li>
+                        <li class="details-list__answer-item">20 коп.</li>
+                        <li class="details-list__questions-item">Плата за игру:</li>
+                        <li class="details-list__answer-item">50 коп.</li>
+                        <li class="details-list__questions-item">Взнос на телеграммы:</li>
+                        <li class="details-list__answer-item"><span style='color: #F54932;text-decoration:line-through'>
+                            <span style='color:#313131'>100 руб.</span></span>&nbsp;&nbsp;21 руб. 16 коп.
+                        </li>
+                    </ul>
+                </div>
                 <div class="details-question">По всем вопросам обращаться в администрацию к К. Михельсону</div>
             </div> 
         </section>
 
         <section class="stages container">
-            <div class="stages-title">ЭТАПЫ ПРЕОБРАЖЕНИЯ<br><span style="display: flex;">ВАСЮКОВ<span class="stages-pretitle">Будущие источники обогащения васюкинцев</span></span></div>
-            <div class="stages-table">
-                <img class="stages-table__aero" src="./img/aero.png" alt="aero">
-                <div class="stages-table__line">
-                    <div class="stages-table__block mr-20 mb-20">
-                        <div class="stages-table__item mb-20">
-                            <div class="stages-table__item-number">1</div>
-                            <div>Строительство железнодорожной магистрали Москва-Васюки</div>
+            <div class="stages-desk">
+                <div class="stages-title">ЭТАПЫ ПРЕОБРАЖЕНИЯ<br><span style="display: flex;">ВАСЮКОВ<span class="stages-pretitle">Будущие источники обогащения васюкинцев</span></span></div>
+                <div class="stages-table">
+                    <img class="stages-table__aero" src="./img/aero.png" alt="aero">
+                    <div class="stages-table__line">
+                        <div class="stages-table__block mr-20 mb-20">
+                            <div class="stages-table__item mb-20">
+                                <div class="stages-table__item-number">1</div>
+                                <div>Строительство железнодорожной магистрали Москва-Васюки</div>
+                            </div>
+                            <div class="stages-table__item">
+                                <div class="stages-table__item-number">4</div>
+                                <div>Строительство дворца для турнира</div>
+                            </div>
                         </div>
-                        <div class="stages-table__item">
-                            <div class="stages-table__item-number">4</div>
-                            <div>Строительство дворца для турнира</div>
+                        <div class="stages-table__block mr-20 mb-20">
+                            <div class="stages-table__item mb-20">
+                                <div class="stages-table__item-number">2</div>
+                                <div>Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</div>
+                            </div>
+                            <div class="stages-table__item">
+                                <div class="stages-table__item-number">5</div>
+                                <div>Размещение гаражей для гостевого автотранспорта</div>
+                            </div>
+                        </div>
+                        <div class="stages-table__block mb-20">
+                            <div class="stages-table__item stages-table__item-big">
+                                <div class="stages-table__item-number">3</div>
+                                <div>Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="stages-table__block mr-20 mb-20">
-                        <div class="stages-table__item mb-20">
-                            <div class="stages-table__item-number">2</div>
-                            <div>Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</div>
+                    <div class="stages-table__line">
+                        <div class="stages-table__block stages-table__item stages-table__item-small mr-20">
+                            <div class="stages-table__item-number">6</div>
+                            <div>Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов</div>
                         </div>
-                        <div class="stages-table__item">
-                            <div class="stages-table__item-number">5</div>
-                            <div>Размещение гаражей для гостевого автотранспорта</div>
+                        <div class="stages-table__block stages-table__item">
+                            <div class="stages-table__item-number">7</div>
+                            <div class="stages-table__item--bigText">Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</div>
                         </div>
-                    </div>
-                    <div class="stages-table__block mb-20">
-                        <div class="stages-table__item stages-table__item-big">
-                            <div class="stages-table__item-number">3</div>
-                            <div>Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="stages-table__line">
-                    <div class="stages-table__block stages-table__item stages-table__item-small mr-20">
-                        <div class="stages-table__item-number">6</div>
-                        <div>Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов</div>
-                    </div>
-                    <div class="stages-table__block stages-table__item">
-                        <div class="stages-table__item-number">7</div>
-                        <div class="stages-table__item--bigText">Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</div>
                     </div>
                 </div>
             </div>
+            <div class="stages-mob">
+                <div class="stages-title">ЭТАПЫ ПРЕОБРАЖЕНИЯ ВАСЮКОВ<span class="stages-pretitle">Будущие источники обогащения васюкинцев</span></div>
+                <img class="stages-table__aero" src="./img/aero.png" alt="aero">
+                <div class="ant-carousel1">
+                    <div class="ant-carousel-hider1">
+                        <ul class="ant-carousel-list1">
+                            <li class="ant-carousel-element1">
+                                1
+                            </li>
+                            <li class="ant-carousel-element1">
+                                2
+                            </li>
+                            <li class="ant-carousel-element1">
+                                3
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
         </section>
 
         <section class="participants container">
-            <div class="participants-title">УЧАСТНИКИ ТУРНИРА</div>
+            
             
             <div class="ant-carousel">
                 <div class="ant-carousel-hider">
-                  <ul class="ant-carousel-list">
+                    <div class="participants-title">
+                        <div>УЧАСТНИКИ ТУРНИРА</div>
+                        <div class="carousel-arrows">
+                            <div class="ant-carousel-arrow-left"></div>
+                            <div class="ant-carousel-arrow-right"></div>
+                        </div>
+                    </div>
+                    
+                    <ul class="ant-carousel-list">
                     <li class="ant-carousel-element">
                         <div class="participants-card">
                             <img src="./img/foto-men.png" alt="foto">
@@ -183,11 +230,26 @@
                     </li>
                   </ul>
                 </div>
-                <div class="ant-carousel-arrow-left"></div>
-                <div class="ant-carousel-arrow-right"></div>
+                <div class="carousel-arrows-mob">
+                    <div class="ant-carousel-arrow-left"></div>
+                    <div class="ant-carousel-arrow-right"></div>
+                </div>
                 <div class="ant-carousel-dots"></div>
-              </div>
+            </div>
         </section>
+        <section class="footer">
+           <div class="marquee-container">
+                <marquee class="marquee" scrollamount="20s" behavior="alternat" direction="left">
+                    ШАХМАТЫ ДВИГАЮТ ВПЕРЕД НЕ ТОЛЬКО КУЛЬТУРА, НО И НАУКУ! &bull; ЛЕД ТРОНУЛСЯ, ГОСПОДА ПРИСЯЖНЫЕ ЗАСЕДАТЕЛИ! &bull; ДЕЛО ПОМОЩИ УТОПАЮЩИМ — ДЕЛО РУК САМИХ УТОПАЮЩИХ!
+                </marquee>
+            </div>
+            <div class="footer-container container">
+                <div class="footer-text">Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта. С подробностями можно познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».</div>
+            </div>
+
+        </section>
+        
+
 
     </div>
     <script>

@@ -5,15 +5,15 @@ function Ant(crslId) {
 		this.crslRoot = id
 	}
 	else {
-		this.crslRoot = document.querySelector('.ant-carousel')
+		this.crslRoot = document.querySelector('.ant-carousel1')
 	};
 
-	this.crslList = this.crslRoot.querySelector('.ant-carousel-list');
-	this.crslElements = this.crslList.querySelectorAll('.ant-carousel-element');
-	this.crslElemFirst = this.crslList.querySelector('.ant-carousel-element');
-	this.leftArrow = this.crslRoot.querySelector('.ant-carousel-arrow-left');
-	this.rightArrow = this.crslRoot.querySelector('.ant-carousel-arrow-right');
-	this.indicatorDots = this.crslRoot.querySelector('div.ant-carousel-dots');
+	this.crslList = this.crslRoot.querySelector('.ant-carousel-list1');
+	this.crslElements = this.crslList.querySelectorAll('.ant-carousel-element1');
+	this.crslElemFirst = this.crslList.querySelector('.ant-carousel-element1');
+	this.leftArrow = this.crslRoot.querySelector('.ant-carousel-arrow-left1');
+	this.rightArrow = this.crslRoot.querySelector('.ant-carousel-arrow-right1');
+	this.indicatorDots = this.crslRoot.querySelector('div.ant-carousel-dots1');
 
 	this.options = Ant.defaults;
 	Ant.initialize(this)
@@ -29,7 +29,7 @@ Ant.defaults = {
 	speed: 750,     // Скорость анимации (мс)
 	touch: true,    // Прокрутка  прикосновением
 	arrows: true,   // Прокрутка стрелками
-	dots: false      // Индикаторные точки
+	dots: true      // Индикаторные точки
 };
 
 Ant.prototype.elemPrev = function(num) {
