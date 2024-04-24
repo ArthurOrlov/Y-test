@@ -6,8 +6,8 @@
     <title>Yandex-test</title>
     <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="./style/style.css">
-    <script src="./js/index.js" defer></script>
-    <script src="./js/index1.js" defer></script>
+    <script src="./js/speaker-slider.js" defer></script>
+    <script src="./js/stages-slider.js" defer></script>
 </head>
 <body>
 
@@ -198,8 +198,11 @@
                             </div>
                         </div>
                     </div>
-                    <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
-                    <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
+                    <div class="prev-next-buttons">
+                        <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+                        <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
+                    </div>
+                    
                   </div>
             </div>
             
@@ -219,60 +222,62 @@
                     </div>
                     
                     <ul class="ant-carousel-list">
-                    <li class="ant-carousel-element">
-                        <div class="participants-card">
-                            <img src="./img/foto-men.png" alt="foto">
-                            <div class="participants-card__name">1Хозе-Рауль Капабланка</div>
-                            <div class="participants-card__title">Чемпион мира по шахматам</div>
-                            <a class="participants-card__link" href="#">Подробнее</a>
-                        </div>
-                    </li>
-                    <li class="ant-carousel-element">
-                        <div class="participants-card">
-                            <img src="./img/foto-men.png" alt="foto">
-                            <div class="participants-card__name">2Хозе-Рауль Капабланка</div>
-                            <div class="participants-card__title">Чемпион мира по шахматам</div>
-                            <a class="participants-card__link" href="#">Подробнее</a>
-                        </div>
-                    </li>
-                    <li class="ant-carousel-element">
-                        <div class="participants-card">
-                            <img src="./img/foto-men.png" alt="foto">
-                            <div class="participants-card__name">3Хозе-Рауль Капабланка</div>
-                            <div class="participants-card__title">Чемпион мира по шахматам</div>
-                            <a class="participants-card__link" href="#">Подробнее</a>
-                        </div>
-                    </li>
-                    <li class="ant-carousel-element">
-                        <div class="participants-card">
-                            <img src="./img/foto-men.png" alt="foto">
-                            <div class="participants-card__name">4Хозе-Рауль Капабланка</div>
-                            <div class="participants-card__title">Чемпион мира по шахматам</div>
-                            <a class="participants-card__link" href="#">Подробнее</a>
-                        </div>
-                    </li>
-                    <li class="ant-carousel-element">
-                        <div class="participants-card">
-                            <img src="./img/foto-men.png" alt="foto">
-                            <div class="participants-card__name">5Хозе-Рауль Капабланка</div>
-                            <div class="participants-card__title">Чемпион мира по шахматам</div>
-                            <a class="participants-card__link" href="#">Подробнее</a>
-                        </div>
-                    </li>
-                    <li class="ant-carousel-element">
-                        <div class="participants-card">
-                            <img src="./img/foto-men.png" alt="foto">
-                            <div class="participants-card__name">6Хозе-Рауль Капабланка</div>
-                            <div class="participants-card__title">Чемпион мира по шахматам</div>
-                            <a class="participants-card__link" href="#">Подробнее</a>
-                        </div>
-                    </li>
-                  </ul>
+                        <li class="ant-carousel-element">
+                            <div class="participants-card">
+                                <img src="./img/foto-men.png" alt="foto">
+                                <div class="participants-card__name">Хозе-Рауль Капабланка</div>
+                                <div class="participants-card__title">Чемпион мира по шахматам</div>
+                                <a class="participants-card__link" href="#">Подробнее</a>
+                            </div>
+                        </li>
+                        <li class="ant-carousel-element">
+                            <div class="participants-card">
+                                <img src="./img/foto-men.png" alt="foto">
+                                <div class="participants-card__name">Эммануил Ласкер</div>
+                                <div class="participants-card__title">Чемпион мира по шахматам</div>
+                                <a class="participants-card__link" href="#">Подробнее</a>
+                            </div>
+                        </li>
+                        <li class="ant-carousel-element">
+                            <div class="participants-card">
+                                <img src="./img/foto-men.png" alt="foto">
+                                <div class="participants-card__name">Александр Алехин</div>
+                                <div class="participants-card__title">Чемпион мира по шахматам</div>
+                                <a class="participants-card__link" href="#">Подробнее</a>
+                            </div>
+                        </li>
+                        <li class="ant-carousel-element">
+                            <div class="participants-card">
+                                <img src="./img/foto-men.png" alt="foto">
+                                <div class="participants-card__name">Арон Нимцович</div>
+                                <div class="participants-card__title">Чемпион мира по шахматам</div>
+                                <a class="participants-card__link" href="#">Подробнее</a>
+                            </div>
+                        </li>
+                        <li class="ant-carousel-element">
+                            <div class="participants-card">
+                                <img src="./img/foto-men.png" alt="foto">
+                                <div class="participants-card__name">Рихард Рети</div>
+                                <div class="participants-card__title">Чемпион мира по шахматам</div>
+                                <a class="participants-card__link" href="#">Подробнее</a>
+                            </div>
+                        </li>
+                        <li class="ant-carousel-element">
+                            <div class="participants-card">
+                                <img src="./img/foto-men.png" alt="foto">
+                                <div class="participants-card__name">Остап Бендер</div>
+                                <div class="participants-card__title">Чемпион мира по шахматам</div>
+                                <a class="participants-card__link" href="#">Подробнее</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="carousel-arrows-mob">
+                        <div class="ant-carousel-arrow-left"></div>
+                        <div class="ant-carousel-arrow-right"></div>
+                    </div>
                 </div>
-                <div class="carousel-arrows-mob">
-                    <div class="ant-carousel-arrow-left"></div>
-                    <div class="ant-carousel-arrow-right"></div>
-                </div>
+                
                 <div class="ant-carousel-dots"></div>
             </div>
         </section>
@@ -285,7 +290,6 @@
             <div class="footer-container container">
                 <div class="footer-text">Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта. С подробностями можно познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».</div>
             </div>
-
         </section>
         
 
